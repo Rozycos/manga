@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e62994f.css",
+    "main.js": "/static/js/main.9ed79143.js",
+    "static/js/787.042cb57d.chunk.js": "/static/js/787.042cb57d.chunk.js",
+    "static/media/torii-forest-illustration-1.png": "/static/media/torii-forest-illustration-1.c4c9073acb7d4a0b2764.png",
+    "static/media/Intersect.png": "/static/media/Intersect.d073236f4c5342833b54.png",
+    "index.html": "/index.html",
+    "main.2e62994f.css.map": "/static/css/main.2e62994f.css.map",
+    "main.9ed79143.js.map": "/static/js/main.9ed79143.js.map",
+    "787.042cb57d.chunk.js.map": "/static/js/787.042cb57d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e62994f.css",
+    "static/js/main.9ed79143.js"
+  ]
+}
