@@ -1,0 +1,127 @@
+.login__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    width: 25.375rem;
+    @include mobile {
+        width: 310px;
+    }
+    span{
+      //position:absolute;
+      //top: auto;
+      font-size: .5rem;
+      color: red;
+
+    }
+  }
+  
+  .form__field {
+    display: flex;
+    flex-direction:row;
+    background-color: $color-white;
+    opacity: .8;
+    margin: 1.5rem 0 0;
+    height: 2.045em;
+    width: 25.375rem;
+    @include mobile {
+        width: 310px;
+    }
+    &--textarea{
+      display: flex;
+      flex-direction:row;
+      background-color: $color-white;
+      opacity: .8;
+      margin: 1rem 0;
+      height: 20.045em;
+      width: 25.375rem;
+      @include mobile {
+          width: 310px;
+      }
+      &-update{
+        margin: 1rem 0 0 0;
+      }
+    }
+    &--checkbox{
+      display: flex;
+      flex-direction:row;
+      background-color: $color-white;
+      opacity: .8;
+      margin: 1rem 0;
+      height: 2.045em;
+      width: 33%;
+    }
+    &--subscribe{
+      width: 18.0rem;
+      margin: 1.5rem;
+      @include tablet {
+        width: 16.0rem;
+    }
+    }
+    &-update{
+      margin: 0 0 0 0;
+    }
+  }
+  
+  .form__label {
+    font-weight: 600;
+    color: $color-white;
+    line-height: 1.15rem;
+    font-size: .5625rem;
+    background-color: $color-black;
+    width: 5.8125rem;
+    height: 26px;
+    text-align: center;
+    align-self: center;
+    margin: .5625rem;
+    letter-spacing: 1px;
+  }
+  
+  .form__input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    //line-height: 2.625rem;
+    width: 100%;
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    //height: 46px;
+    &:focus-visible {
+        outline: none;
+    }
+    &--textarea{
+      line-height: 1rem;
+    }
+    &--button{
+      z-index:100;
+      font-size: 1rem;
+      border:none;
+      background-color: $color-white;
+      opacity: .8;
+      cursor: pointer;
+      &:active{
+        background-color: $color-light-grey;
+    }
+    }
+  }
+
+  .btn__form{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.5px;
+    min-width: 86px;
+    height: 26px;    
+    cursor: pointer;
+    &--log{
+      margin: 2rem 1rem;
+    }
+    &--update{
+      margin: 0 0 1rem 0;
+    }
+  }

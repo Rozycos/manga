@@ -1,0 +1,146 @@
+.section__new {
+    background: $color-white;
+    &--container{
+        width: 1272px;
+        height: 100%;
+        margin: 0 auto;
+       
+        @include notebook {
+            width: 99%;
+        }
+        
+    }
+
+    &--header{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.0667rem;
+        line-height: 1.2444rem;
+        /* identical to box height, or 117% */
+        letter-spacing: 0.5px;
+        padding: 85px 0 21px 0;
+        @include mobile {
+            padding: 10% 0 21px 0;
+        }
+
+        &::before{
+            content:"";
+            display: block;
+            position:relative;
+            height: 2px;
+            background: $color-black;
+            border-radius: 1px;
+            width:1rem;
+            top: 1.35rem;
+        }
+        &::after{
+            content:"";
+            display: block;
+            height: 2px;
+            background: $color-light-grey;
+            width:98%;
+        }
+    }
+    
+}
+
+.new__box{
+    display: flex;
+    flex-direction: row;
+    @include mobile {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    img{
+        width: 50%;
+        @include mobile {
+            width:100%;
+        }
+    }
+
+    &--text{
+        width:50%;
+        height: 100%;
+        padding: 4% 6%;
+
+        @include mobile {
+            min-height:180px;
+            display:flex;
+            flex-direction: column;
+            gap: 10px;
+            padding:0 6%;
+        }
+        span{
+            color: $color-black-secondary;
+            font-weight: 500;
+            font-size: 17.1325px;
+            text-transform:capitalize;
+        }
+        p{
+            color: $color-grey;
+            font-size: .9rem;
+            line-height:150%;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin:0;
+        }
+        h3{
+            margin:0;
+            line-height: 39px;
+        }
+        &-link{
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 26px;
+            color: $color-black;
+        }
+    }
+}
+.new__box--container{
+    max-height: 100%;
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../assets/torii-forest-illustration-1.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+    width:100%;
+    
+    @include mobile {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y:bottom;
+        //background-position: center;
+        width:100%;
+    }
+}
+
+.new__box--span:nth-child(2n){
+    display: flex;
+        flex-direction: row-reverse;
+        background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../assets/torii-forest-illustration-1.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position-x: left;
+        width:100%;
+        height: 100%;
+        
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y:bottom;
+            width:100%;
+        }
+     
+}
+
+.paginator{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem 1rem 0 0;
+}

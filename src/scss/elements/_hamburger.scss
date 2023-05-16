@@ -1,0 +1,54 @@
+.hamburger {
+  &__menu {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: auto;
+  cursor: pointer;
+  position: relative;
+  }
+  
+  &__icon {
+    //border: 2px solid black;
+    border-radius: 50%;
+    
+  }
+
+  &__nav {
+    font-size: 0.62222rem;
+    font-weight: 500;
+    position: absolute;
+    top: 2.1rem;
+    right:0;
+    z-index: 1;
+
+    &--element{
+      padding: 0 2em;
+      list-style: none;
+      background-color: white;
+      width: 20em;
+      height: 3.1115em;
+      z-index: 1;
+    }
+
+    &--link{
+      text-decoration: none;
+      color: $color-black;
+      &:hover {
+        color: $color-black;
+        border-bottom: 2px solid $color-black;
+      }
+    }
+  }
+}
+
+.line{
+  border: 1px solid $color-black;
+  margin: 4px;
+}
+
+.hide{
+  display:none;
+  @include mobile {
+    display: block;
+  }
+}

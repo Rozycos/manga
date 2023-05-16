@@ -1,0 +1,47 @@
+.footer {
+    background: $color-black;
+    color: $color-white;
+    &__container{
+        width:1272px;
+        margin: 0 auto;
+        @include notebook {
+            width: 100%;
+            ///padding: 0 1rem !important;
+        }
+
+    }
+    &__box{
+        display: flex;
+        justify-content:space-between;
+        @include mobile {
+            width: 100%;
+            justify-content:center;
+            flex-direction: column;
+        }
+       
+        &--boxes{
+            width: 50%;
+            padding: 1.5rem 1.5rem 3rem 1.5rem;
+            @include mobile {
+                width: 100%;
+            }
+            p{
+                font-weight: 400;
+                font-size: .7112rem;
+                line-height: 1.6889rem;
+                /* or 237% */
+                letter-spacing: 0.677419px;
+            }
+        }
+    }
+}
+
+.copyright{
+    font-weight: 400;
+    font-size: .7112rem;
+    line-height: 1.6889rem;
+    /* identical to box height, or 237% */
+    letter-spacing: 0.677419px;
+    padding: .84445rem 0;
+    border-top: 1px solid $color-white;
+}

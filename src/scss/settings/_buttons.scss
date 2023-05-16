@@ -1,0 +1,29 @@
+.btn {
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.btn__primary{
+    border-color: $color-white;
+    background-color: $color-black;
+    color: $color-white;
+    
+    
+    &:active{
+        border-color: $color-grey;
+    }
+}
+
+.btn__paginator{
+    width: 1.34rem;
+    height: 1.34rem;
+    border: 3px solid;
+    border-radius: 50%;
+    background-color: $color-white;
+    text-align: center;
+    line-height:100%;
+    
+    &:active{
+        border-color: $color-grey;
+    }
+}

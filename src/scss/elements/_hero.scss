@@ -1,0 +1,80 @@
+//slider
+.hero__container{
+    height: 0;
+    padding-bottom: 57.6388889%; /* 16:9 */
+    position: relative;
+    width: 100%;
+}
+
+//hero section
+.hero {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url(../../assets/torii-forest-illustration-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 0 .4rem;
+    &__text{
+        max-width: 550px;
+        h2{
+            font-family: $font-varela;
+            font-size: 300%;
+            font-weight: 400;
+            color: $color-white;
+            letter-spacing: 3px;
+            @include tablet {
+                font-size: 230%;
+            }
+            @include mobile {
+                font-size: 100%;
+            }
+
+        }
+        p{
+            color: $color-white;
+            font-size: .8rem;
+            letter-spacing: 0.5px;
+
+            @include mobile {
+                font-size: .7rem;
+            }
+            
+        }
+
+        div{
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__list{
+        color: $color-white;
+        font-size: .7112rem;
+        letter-spacing: 0.5px;
+        transform: translate(-100%, 300%);
+
+        @include mobile {
+            display: none;
+        }
+        @include tablet {
+            transform: translate(-100%, 200%);
+        }
+    }
+
+    &__img{
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+}

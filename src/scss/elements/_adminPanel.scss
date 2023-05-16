@@ -1,0 +1,47 @@
+.page__wrapper--admin{
+    max-width: 100vw;
+    width: 100%;
+    min-height: calc(100vh - 3.1115em);
+    //height: 100%;
+    background-image: url(../../assets/torii-forest-illustration-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.admin{
+    &__nav{
+        display:flex;
+        flex-direction: column;
+        background-color: rgba(255,255,255, 0.6);
+        width:100%;
+        h2{
+            margin: .5rem 0 0 0;
+            align-self: center;
+        }
+        span{
+            margin: 0.5rem 0 ;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-white;
+    }
+    &__paginator{
+        display: flex;
+        justify-content:flex-end;
+        padding: .5rem;
+    }
+}
+
+.btn__logout{
+    background-color: red;
+}

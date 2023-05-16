@@ -1,0 +1,32 @@
+.box__article{
+    background-color: $color-white;
+    opacity: .8;
+    margin: 1rem 0;
+    
+
+    &--list{
+        margin: 1rem .5rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-black;
+        @include mobile{
+            display:flex;  
+            flex-direction: column;
+      }
+
+        img{
+            max-width:350px;
+            
+        }
+        p {
+            font-size: 0.8rem;
+            font-weight: 400;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+    }
+
+}
