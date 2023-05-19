@@ -19,7 +19,7 @@ const NewSectionList = (props) =>{
 
     return(
         <span className="new__box new__box--container new__box--span">
-                    <img src={articles.imageURL}/>
+                    <img src={articles.imageURL} alt=""/>
                     <div className="new__box--text">
                         <span>{showCategory}</span>
                         <h3>{articles.title}</h3>

@@ -40,7 +40,7 @@ const NewSection =()=>{
                     });
                     console.log('first item ', items[0])
                     //console.log(snapshot.data().count)
-                    console.log("list length", list.length)
+                    //console.log("list length", list.length)
                     
                     console.log(lastPage)
                     setList(items);
